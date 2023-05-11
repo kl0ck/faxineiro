@@ -9,8 +9,8 @@ Script simples para remoção de linhas de código inúteis.
 - Como resultado, o script vai gerar um novo arquivo com o mesmo nome, com a extensão `.limpo`. Este arquivo não terá as linhas inúteis que foram configuradas no arquivo `faxineiro-linhas-remover.txt`.
 
 ## Exemplo de uso
-python faxineiro.py -inputFile MinhaClasse.java
+`python faxineiro.py -inputFile MinhaClasse.java`
 
 ## A fazer
-Incluir suporte a expressões regulares.
-Incluir suporte a limpeza de vários arquivos.
+- Incluir suporte a expressões regulares.
+- Incluir suporte a limpeza de vários arquivos.
