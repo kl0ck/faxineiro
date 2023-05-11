@@ -11,6 +11,8 @@ Script simples para remoção de linhas de código inúteis.
 ## Exemplo de uso
 `python faxineiro.py -inputFile MinhaClasse.java`
 
+Arquivo de saída gerado: `MinhaClasse.java.limpo`
+
 ## A fazer
 - Incluir suporte a expressões regulares.
 - Incluir suporte a limpeza de vários arquivos.
