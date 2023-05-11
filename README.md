@@ -6,6 +6,7 @@ Script simples para remoção de linhas de código inúteis.
 ## Como usar o script
 - Adicione no arquivo `faxineiro-linhas-remover.txt` as linhas que você quer remover do arquivo de entrada, exatamente como elas aparecem no arquivo original. Espaços em branco e quebra de linha são desconsiderados. Texto é case sensitive.
 - Execute o script passando o nome do arquivo a limpar, através dos argumentos `-inputFile <nome_do_arquivo>`.
+- Como resultado, o script vai gerar um novo arquivo com o mesmo nome, com a extensão `.limpo`. Este arquivo não terá as linhas inúteis que foram configuradas no arquivo `faxineiro-linhas-remover.txt`.
 
 ## Exemplo de uso
 python faxineiro.py -inputFile MinhaClasse.java
