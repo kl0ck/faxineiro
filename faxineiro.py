@@ -23,10 +23,11 @@ def main(inputFileName):
     removeSet = set()
     
     for removeLine in removeLines:
-        removeSet.add(removeLine.strip())
+        if (removeLine.strip() != ""):
+            removeSet.add(removeLine.strip())
 
-    for line in inputLines:
-        filtrarLinha(line, removeSet, outputLines)
+    for inputLine in inputLines:
+        filtrarLinha(inputLine, removeSet, outputLines)
 
     outputFile = open(inputFileName + ".limpo", "w")
     
@@ -42,7 +43,7 @@ def main(inputFileName):
 def filtrarLinha(line, removeSet, outputLines):
     if (line.strip() not in removeSet):
         outputLines.append(line)
-    
+        
 if __name__ == "__main__":
     # https://docs.python.org/3/howto/argparse.html
     import argparse
